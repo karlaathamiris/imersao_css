@@ -1,0 +1,37 @@
+body {
+    background-image:url("https://static.vecteezy.com/system/resources/previews/000/541/187/non_2x/vector-abstract-beautiful-sunshine-blue-color-gradient-background.jpg");
+    background-size: auto 100vh;
+    font-family: 'Goudy Bookletter 1911'; 
+  }
+  
+  .menu {
+    background-color: white;
+  }
+  
+  .menu ul {
+    display: flex;
+    justify-content: space-around; 
+  }
+  
+  
+  a {
+    color: teal;
+    text-decoration: none; 
+  }
+  
+  a:hover {
+    text-decoration: underline; 
+  }
+  
+  .menu li {
+    list-style: none;
+  }
+  .site-subtitle,
+  .site-title {
+    color: whitesmoke;
+    text-align: center;
+  }
+  
+  .site-subtitle {
+    font-style: italic;  
+  }
