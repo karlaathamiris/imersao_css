@@ -1,2 +1,2 @@
-# imers-ocss
-Site utilizando html e CSS
+# imersaoCSS
+Repositório para planejamento das aulas

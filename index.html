@@ -1,22 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Karla Thamiris Leitão</title>
-    <link rel="stylesheet" href="css/estilos.css">
-</head>
-<body>
-    <header>
-        <nav class="menu">
-          <ul>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Portfólio</a></li>
-            <li><a href="#">Contato</a></li>
-          </ul>
-        </nav>
-        <h1 class="site-title">Karla Thamiris Leitão</h1>
-        <h2 class="site-subtitle">aprendiz front-end developer</h2>
-      </header>
-    
-</body>
+<html lang="pt-br">
+  <head>
+
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Karla Thamiris Leitão</title>
+      <link rel="stylesheet" href="./css/estilos.css">
+      <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=PT+Mono&family=Roboto&display=swap" rel="stylesheet">
+      
+        <script src="https://kit.fontawesome.com/b40bdf9c13.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!--Este é um comentário, isso não vai ser exibido pelo navegador, só uma mensagem pra essa dev linda <3-->
+      <header>
+          <nav class="menu">
+            <ul>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#portfolio">Portfólio</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </nav>
+          <div class="titulo">
+            <h1 class="site-title">Karla Thamiris Leitão</h1> 
+            <h2 class="site-subtitle">aprendiz front-end developer</h2>
+          </div> 
+        </header>
+        <section class="portfolio" id="portfolio">
+          <h2>Cursos</h2>
+          <div class="grid">
+            <a href="https://reprograma.com.br/" target="_blank">
+              <figure>
+                <img class="img-portfolio" src="./images/reprograma.jpg" alt="Reprograma">
+                <p>Reprograma</p>
+              </figure>
+            </a>
+            <a href="https://www.programaria.org/" target="_blank">
+              <figure>
+                <img class="img-portfolio" src="./images/programaria.jpg" alt="Programaria">
+                <p>Programaria</p>
+              </figure>
+            </a>
+            <a href="http://www.cloudgirls.com.br/" target="_blank">
+              <figure>
+                <img class="img-portfolio" src="./images/cloudgirls.jpg" alt="Cloud Girls">
+                <p>Cloud Girls</p>
+              </figure>
+            </a>
+            <a href="https://www.alura.com.br/" target="_blank">
+              <figure>
+                <img class="img-portfolio" src="./images/alura.jpg" alt="ALura">
+                <p>Alura</p>
+              </figure>
+            </a>
+              <figure>
+                <a href="https://ifrs.edu.br/" target="_blank">
+                <img class="img-portfolio" src="./images/ifrs.jpg" alt="IFRS">
+                <p>Instituto Federal do Rio Grande do Sul</p>
+              </figure>
+          </a>
+          </div>
+
+        </section> 
+        <section class="contato" id="contato">
+          <h2>Contato</h2>
+
+          <div class="grid icons">
+              <a target="_blank" href="https://github.com/karlaathamiris"> 
+                    <i class="fab fa-github"></i>
+              </a>
+              <a target="_blank" href="https://twitter.com/perdida_mulher"> 
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a target="_blank" href="mailto:karlatn@outlook.com"> 
+                    <i class="fas fa-envelope"></i>
+              </a>
+          </div>
+        </section>   
+  </body>
 </html>
