@@ -90,7 +90,7 @@ h2 {
   transform: scale(0.2) translateX(50vh);
   opacity: 0.3;
   animation: linear 2s animacaoTitulo forwards;
-}*/
+}
 
 
 @keyframes animacaoTitulo {
@@ -104,7 +104,7 @@ h2 {
       transform: scale(1) translateY(0);
       opacity: 1;
     }
-}
+}*/
 
 .site-title {
   font-family: 'Lobster Two', cursive;
