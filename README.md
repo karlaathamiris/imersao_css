@@ -1,2 +1,2 @@
 # imersaoCSS
-Repositório para planejamento das aulas 
+Site feito com html e CSS a partir da Imersão Alura.
