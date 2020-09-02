@@ -89,8 +89,9 @@ h2 {
 /*.titulo {
   transform: scale(0.2) translateX(50vh);
   opacity: 0.3;
-  animation: linear 2s animacaoTitulo forwards;*/
+  animation: linear 2s animacaoTitulo forwards;
 }*/
+
 
 @keyframes animacaoTitulo {
   
