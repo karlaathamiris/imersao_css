@@ -41,7 +41,6 @@ header {
   z-index: 1;
 }
 
-
 .menu ul {
   display: flex;
   justify-content: space-around; 
@@ -49,8 +48,8 @@ header {
 
 .menu li {
   list-style: none;
-  
 }
+
 .menu a {
   display: block;
   padding: 10px 20px;
@@ -87,23 +86,22 @@ h2 {
   color: whitesmoke;
 }
 
-.titulo {
+/*.titulo {
   transform: scale(0.2) translateX(50vh);
   opacity: 0.3;
-  animation: linear 2s animacaoTitulo forwards;
-}
+  animation: linear 2s animacaoTitulo forwards;*/
+}*/
 
 @keyframes animacaoTitulo {
   
     0% {
       transform: scale(0.2) translateX(50vh);
-  opacity: 0.3;
-
+      opacity: 0.3;
     }
 
-    100% { transform: scale(1) translateY(0);
+    100% {
+      transform: scale(1) translateY(0);
       opacity: 1;
-
     }
 }
 
@@ -118,17 +116,50 @@ h2 {
   color: whitesmoke; 
 }
 
+.sobre,
 .contato,
 .portfolio {
   padding: 2em;
+  min-height: 100vh;
 }
 
+@media (min-width: 1200px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+  }
+}
+.sobre h2,
 .contato h2,
 .portfolio h2 {
   font-family: 'Roboto', sans-serif;
   margin-bottom: 2em;
   font-size: 1.8em;
   text-shadow: 0.2em 0.2em #333;
+}
+
+.sobre p {
+  color: white;
+  text-indent: 2em;
+  margin-bottom: revert;
+  text-align: justify;
+}
+
+.sobre a {
+  text-decoration: underline;
+}
+
+.sobre a:hover {
+  color: whitesmoke;
+  background-color:  #948B89;
+  text-decoration: none;
+}
+
+.profile img {
+  width: 20em;
+  float: right;
+  margin-left: 2em; 
 }
 
 .portfolio .grid {
@@ -159,13 +190,43 @@ h2 {
 
 .img-portfolio {
   height: 180px;
-  width: 240px;
+  width: 100%;
   object-fit: contain;
   transition: transform 500ms;
 }
 
-.img-portfolio:hover {
+/*.img-portfolio:hover {
   transform: scale(1.2);
+}*/
+
+.flip-card {
+  perspective: 400x;
+}
+
+.card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 2.3s;
+}
+
+.flip-card:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card-frente,
+.card-atras {
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+}
+
+.card-atras {
+  position: absolute;
+  background-color: white;
+  color: black;
+  height: 180px;
+  width: 100%;
+  transform: rotateY(180deg);
 }
 
 .contato .icons {
@@ -180,7 +241,6 @@ h2 {
 }
 
 .contato a:active,
-.contato a:hover{
+.contato a:hover {
   text-shadow: 2px 0px 10px rgba(255, 255, 255, 0.6);
 }
-
